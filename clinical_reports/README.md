@@ -1,4 +1,4 @@
-# helix-ai
+# clinical_reports
 NLP task to analyze clinical trial reports.
 
 ## Background
