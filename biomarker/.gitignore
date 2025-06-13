@@ -1,2 +1,2 @@
-# /data/*.tsv
-# /notebooks/
+/data/mock.tsv
+/notebooks/biomarker.ipynb
