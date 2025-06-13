@@ -1,5 +1,5 @@
 # Bio-ML projects
 Small and various Biology & Machine Learning projects under exploration, experimentation, and development
 
-### [methylation_biomarker](./methylation_biomarker): 
-- A binary classifiercation model that leverages DNA methylation profiles to predict disease status.
+### [biomarker](./biomarker): 
+- A small-scale Bio-ML experiment that builds a binary classifier on a biomarker to predict disease status. 
