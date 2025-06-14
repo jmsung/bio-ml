@@ -2,11 +2,11 @@
 Small and various Biology & Machine Learning projects under exploration, experimentation, and development.
 
 ### [biomarker](./biomarker): 
-- A small-scale Bio-ML experiment that builds a binary classifier on a biomarker to predict disease status. 
+- A binary classifier on a biomarker to predict disease status. 
 
-### [clinical_reports](./clinical_reports): 
-- NLP task to analyze clinical trial reports.
-    - Classify sentences from clinical trials.
-    - Extract important entities (Drug Name, Symptom, Dosage).
+### [sentence_clasification](./sentence_clasification): 
+- NLP to classify sentences from clinical trials.
 
+ ### [named_entity_recognition](./named_entity_recognition): 
+- NLP to extract important entities (Drug Name, Symptom, Dosage).
 
