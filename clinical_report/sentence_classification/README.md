@@ -21,5 +21,5 @@ Predicted Category: Adverse Effect
 ```
 
 ## Provided Datasets
-- `classification_data.csv`
+- [`classification_data.csv`](./data/classification_data.csv)
     - Columns: `id`, `text`, `label`
