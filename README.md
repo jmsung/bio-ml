@@ -4,9 +4,8 @@ Small and various Biology & Machine Learning projects under exploration, experim
 ### [biomarker](./biomarker): 
 - A binary classifier on a biomarker to predict disease status. 
 
-### [sentence_clasification](./sentence_clasification): 
-- NLP to classify sentences from clinical trials.
-
- ### [named_entity_recognition](./named_entity_recognition): 
-- NLP to extract important entities (Drug Name, Symptom, Dosage).
+### [clinical report](./clinical_report): 
+- NLP task to analyze clinical trial reports.
+    - Classify sentences from clinical trials and 
+    - Extract important entities (Drug Name, Symptom, Dosage).
 
