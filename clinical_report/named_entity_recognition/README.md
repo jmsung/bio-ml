@@ -22,8 +22,18 @@ Predicted Entities:
 ```
 
 ## Provided Datasets
-- `ner_data.conll`
+- [`ner_data.cdv`](data/ner_data.csv)
     - IOB-tagged format for NER (Token + Tag)
     
-    [ner_data.csv](attachment:46d5bad6-7467-4ced-ba24-c137e7baf1ca:ner_data.csv)
-    
+## Notebook
+[`notebooks/named_entity_recognition.ipynb`](notebooks/named_entity_recognition.ipynb)
+
+## Results
+
+After just **one epoch** of fine-tuning, our DistilBERT token-classification model achieves perfect performance on the validation set across all three entity types.
+
+### Training vs. Evaluation Loss  
+![Training vs. Evaluation Loss](./results/figs/training_vs_eval_loss.png)
+
+### One-vs-Rest ROC Curves  
+![ROC curves](./results/figs/roc_curves.png)
