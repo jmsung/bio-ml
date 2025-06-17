@@ -43,6 +43,17 @@ This notebook fine-tunes `DistilBERT` for text classification by: loading and en
 ## Results
 After just one epoch of fine-tuning, the pretrained `DistilBERT` model achieves perfect validation performance (Accuracy = F1 = AUC = 1.0) for all 3 classes.
 
+|                     | precision | recall | f1-score | support |
+|---------------------|----------:|-------:|---------:|--------:|
+| **Adverse Effect**        |     1.0000 |  1.0000 |    1.0000 |      72 |
+| **Neutral Observation**   |     1.0000 |  1.0000 |    1.0000 |      62 |
+| **Positive Outcome**      |     1.0000 |  1.0000 |    1.0000 |      66 |
+| **accuracy**              |            |         | **1.0000** |     200 |
+| **macro avg**             |     1.0000 |  1.0000 |    1.0000 |     200 |
+| **weighted avg**          |     1.0000 |  1.0000 |    1.0000 |     200 |
+
+
+
 ```
 First 5 validation predictions:
 
