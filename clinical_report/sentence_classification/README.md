@@ -77,3 +77,16 @@ Example 5
 
 ### One-vs-Rest ROC Curves  
 ![ROC curves](./results/figs/roc_curves.png)
+
+## LLM_DISCLOSURE
+
+Development of this sentence classification notebook was assisted by an LLM (OpenAI ChatGPT, model o4-mini), under full human supervision. Specifically, the LLM contributed to:
+
+- **High-level design**: defining the classification task, selecting metrics (accuracy, F1, AUC), and outlining the data pipeline.  
+- **Concept explanations**: clarifying label encoding, train/validation splitting, and evaluation strategies.  
+- **Code scaffolding**: generating boilerplate for data loading, tokenization, PyTorch dataset wrappers, model instantiation, and Trainer setup.  
+- **Debugging support**: identifying and fixing errors in notebook cells (e.g., shape mismatches, missing imports).  
+- **Refactoring & style**: improving code readability, organizing imports, and unifying naming conventions.  
+- **Documentation**: drafting setup instructions, README sections, example outputs, and `environment.yml` snippets.  
+
+All AI-generated suggestions were reviewed, refined, and tested by the developer before being merged into the final code base.

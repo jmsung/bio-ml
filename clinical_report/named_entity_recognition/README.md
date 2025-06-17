@@ -67,3 +67,16 @@ Entities:
 
 ### One-vs-Rest ROC Curves  
 ![ROC curves](./results/figs/roc_curves.png)
+
+## LLM_DISCLOSURE
+
+This project was developed with assistance from an LLM (OpenAI ChatGPT, model o4-mini), under full human supervision. The LLM was used for:
+
+- **Brainstorming & design**: outlining the overall NER approach, data pipeline, and evaluation strategy.  
+- **Concept clarification**: explaining IOB tagging, subword alignment, and model selection.  
+- **Code generation**: providing templates for data loading, tokenization, label alignment, training loops, evaluation, and plotting.  
+- **Debugging**: diagnosing errors in notebook cells and Python scripts and suggesting fixes.  
+- **Refactoring & cleanup**: improving readability, structure, and consistency of code snippets.  
+- **Documentation**: drafting the `README.md`, `environment.yml`, and usage instructions.  
+
+All suggestions from the LLM were carefully reviewed, edited, and tested by the developer before inclusion.
