@@ -42,11 +42,37 @@ We first patch the original IOB file to label any “drug” tokens, group rows 
 After only **one epoch** of fine-tuning, our DistilBERT token-classification model achieves perfect validation performance across all three entity types, and qualitative inspection of five sample predictions confirms that the extractions look correct.
 
 ```
+First 5 validation predictions:
+
+Sentence: "Patients experienced dizziness after administration of 50mg of DrugX"
+Entities:
+- Symptom: dizziness
+- Dosage: 50mg
+- Drug Name: DrugX
+
 Sentence: "Patients experienced fever after taking 75mg of DrugE"
 Entities:
 - Symptom: fever
 - Dosage: 75mg
 - Drug Name: DrugE
+
+Sentence: "Patients experienced vomiting post-treatment with 250mg of DrugA"
+Entities:
+- Symptom: vomiting
+- Dosage: 250mg
+- Drug Name: DrugA
+
+Sentence: "Patients experienced headache post-treatment with 500mg of DrugZ"
+Entities:
+- Symptom: headache
+- Dosage: 500mg
+- Drug Name: DrugZ
+
+Sentence: "Patients experienced rash after administration of 50mg of DrugX"
+Entities:
+- Symptom: rash
+- Dosage: 50mg
+- Drug Name: DrugX
 ```
 
 | Label            | Precision | Recall | F1-Score | Support |
