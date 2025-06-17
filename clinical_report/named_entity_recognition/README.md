@@ -11,7 +11,7 @@ Entities:
 ```
 
 ## Provided Datasets
-- [`ner_data.cdv`](data/ner_data.csv)
+- [`ner_data.csv`](data/ner_data.csv)
     - IOB-tagged format for NER (Token + Tag)
 
 ## Setup
