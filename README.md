@@ -9,3 +9,5 @@ Small and various Biology & Machine Learning projects under exploration, experim
     - Classify sentences from clinical trials and 
     - Extract important entities (Drug Name, Symptom, Dosage).
 
+### [differential expression](/.diff_expr):
+- Explore gene expression data to identify differentially expressed genes between treatment and control conditions.
