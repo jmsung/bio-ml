@@ -9,5 +9,8 @@ Small and various Biology & Machine Learning projects under exploration, experim
     - Classify sentences from clinical trials and 
     - Extract important entities (Drug Name, Symptom, Dosage).
 
-### [differential expression](./diff_exp):
+### [differential expression](./differential_exppression):
 - Explore gene expression data to identify differentially expressed genes between treatment and control conditions.
+
+### [chemical compounds](./chemical_compounds):
+- A Python tool to read chemical compounds in SMILES string, apply customizable filters, compute elemental counts, and generate curated outputs efficiently.
