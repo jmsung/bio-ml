@@ -28,10 +28,12 @@ def main() -> None:
     )
     args = parser.parse_args()
 
+    print(f"🔍 Running filter with threshold = {args.threshold}")
     scores_path = Path(const.FILEPATH_COMPOUND_SCORES)
-    names_path = Path(const.FILEPATH_COMPOUND_NAMES)
+    names_path  = Path(const.FILEPATH_COMPOUND_NAMES)
     output_path = Path(const.FILEPATH_USABLE_COMPOUNDS)
 
+    print(f"📄 Reading compound scores from: {scores_path}")
     utils.prepare_output_directory(output_path.parent)
 
     # Stream, filter, and collect usable compounds
@@ -48,6 +50,8 @@ def main() -> None:
             **atoms,
         })
 
+    print(f"✅ Filtered down to {len(usable)} usable compounds")
+
     # Write to CSV
     fieldnames = ['smiles', 'activity_score', 'C', 'N', 'O']
     with output_path.open('w', newline='') as csvfile:
@@ -55,9 +59,11 @@ def main() -> None:
         writer.writeheader()
         for row in usable:
             writer.writerow(row)
+    print(f"💾 Output written to: {output_path}")
 
     # Optionally print top results
     if args.show_top:
+        print("\n🌟 Top compounds:")
         names = utils.load_names(names_path)
         top5 = sorted(
             usable, key=lambda r: r['activity_score'], reverse=True
@@ -65,7 +71,6 @@ def main() -> None:
         for idx, comp in enumerate(top5, start=1):
             name = names.get(comp['smiles'], 'Unknown')
             print(f"{idx}. {name} - {comp['activity_score']}\n   {comp['smiles']}")
-
 
 if __name__ == '__main__':
     main()
