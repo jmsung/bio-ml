@@ -1,4 +1,12 @@
+# Data & generated outputs
 /data/
 /output/
+
+# Byte-code caches
 __pycache__/
 *.pyc
+
+# coverage.py output
+.coverage
+htmlcov/
+coverage.xml
