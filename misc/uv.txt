@@ -1,0 +1,22 @@
+# 0. (Optional, if you don’t already have pyenv) install pyenv so you can pick Python 3.12
+brew install pyenv
+
+# 1. Install & use Python 3.12 (TensorFlow-macos only publishes cp312 wheels, not cp313)
+pyenv install 3.12.5
+pyenv local 3.12.5
+# now `python --version` should show 3.12.x
+
+# 2. Install UV via Homebrew
+brew update
+brew install uv
+
+# 3. Bootstrap your new project
+mkdir my_project
+cd my_project
+uv init
+
+# 4. Add all the libs you need (including Apple‐Silicon TF wheels)
+uv add numpy pandas seaborn tensorflow-macos tensorflow-metal torch torchvision torchaudio
+
+# 5. Sync / install everything into your virtual env
+uv sync
